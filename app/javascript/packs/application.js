@@ -10,3 +10,6 @@ import "../stylesheets/application.scss";
 
 Rails.start();
 ActiveStorage.start();
+var componentRequireContext = require.context("src", true);
+var ReactRailsUJS = require("react_ujs");
+ReactRailsUJS.useContext(componentRequireContext);
